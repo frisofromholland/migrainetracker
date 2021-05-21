@@ -1,0 +1,5 @@
+mongo:
+  connection:
+    string: mongodb://mongo:mongo123@localhost:27018
+  db:
+    name: ecosystem

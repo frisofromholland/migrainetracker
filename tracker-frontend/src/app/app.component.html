@@ -1,0 +1,17 @@
+<div class="_navbar">
+  <span class="_hamburger" (click)="toggleMenu()">&#9776;</span>
+</div>
+
+<div class="jumbotron text-center">
+
+  <h1>Tracker App</h1>
+  <p>Marieke</p>
+  <div class="sidenav bg-light" [class]="sideMenuClass">
+    <div class="closebtn" (click)="toggleMenu()">&times;</div>
+    <a class="menu-item"  routerLink="/day" (click)="toggleMenu()">Nieuwe dag</a>
+    <a class="menu-item" routerLink="/week" (click)="toggleMenu()">Deze week</a>
+    <a class="menu-item" routerLink="/month" (click)="toggleMenu()">Deze maand</a>
+    <a class="menu-item" routerLink="/" (click)="toggleMenu()">Overzicht</a>
+  </div>
+</div>
+<router-outlet></router-outlet>
