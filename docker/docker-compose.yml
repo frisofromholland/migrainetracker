@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  mongodb_p:
+    image : mongo
+    container_name: mongodb_p
+    volumes:
+      - /Users/friso/data/mongo:/data/db
+    ports:
+      - 27017:27017
+    restart: unless-stopped
