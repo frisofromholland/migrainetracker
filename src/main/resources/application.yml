@@ -1,5 +1,8 @@
-mongo:
-  connection:
-    string: mongodb://mongo:mongo123@localhost:27018
-  db:
-    name: ecosystem
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27018
+logging:
+  level:
+    root: DEBUG

@@ -1,0 +1,36 @@
+type Day {
+    id: ID!,
+    date: Date!,
+    time: Time,
+    severity: Int!,
+    medication: String,
+    comment: String
+}
+
+type Date {
+    year: Int!,
+    month: Int!,
+    day:Int!
+}
+
+type Time {
+    hour: Int!,
+    minute: Int!
+}
+
+type Query {
+    allDays(
+        count: Int!, offset: Int!
+    ): [Day!]!
+}
+
+type Mutation {
+    addDay(
+        year: Int!, month: Int!, dayOfMonth:Int!,
+        hours: Int, minute: Int,
+        severity: Int!,
+        medication: String,
+        comment: String
+    ): Day!
+}
+
